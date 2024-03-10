@@ -6,7 +6,7 @@ export default defineConfig({
   output: {
     dir: "dist",
     format: "es",
-    name: "use-axios-http-requests",
+    name: "use-axios-http-request",
   },
   external: ["react", "axios"],
   plugins: [typescript({ tsconfig: "tsconfig.json" })],
