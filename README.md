@@ -1,4 +1,4 @@
-# use-axios-http-requests
+# use-axios-http-requests-ts
 
 Incredibly useful package for making HTTP requests! This package eliminates the need for the Fetch API and is built on top of the powerful library [axios](https://www.npmjs.com/package/axios).
 
@@ -64,16 +64,16 @@ type ErrorType = {
 
 ## Installation\*
 
-npm
+_npm_
 
 ```js
-npm install use-axios-http-requests
+npm install use-axios-http-requests-ts
 ```
 
-yarn
+_yarn_
 
 ```js
-yarn add use-axios-http-requests
+yarn add use-axios-http-requests-ts
 ```
 
 ## Exmaple with Javascript
@@ -81,7 +81,7 @@ yarn add use-axios-http-requests
 `App.jsx`
 
 ```js
-import { useAxios, useAxiosFn } from "use-axios-http-requests";
+import { useAxios, useAxiosFn } from "use-axios-http-requests-ts";
 
 const Products = () => {
   const PRODUCTS_URL = "https://dummyjson.com/products";
@@ -155,7 +155,7 @@ const Products = () => {
 The only drawback of the approach using JavaScript is that we lack accessibility to data or suggestions for our data properties which can clearly seen below which force us to check the data coming from the API again and again!
 
 <div align="center">
-   <img src="./public/SS1.png" /<br>
+   <img src="https://dev-hub-nextjs-app.vercel.app/_next/image?url=http%3A%2F%2Fres.cloudinary.com%2Fdvzjzf36i%2Fimage%2Fupload%2Fv1710102197%2Fqkblnyxu5qzoqqtqmc4i.png&w=1920&q=75" /<br>
 </div>
 <br/>
 
@@ -183,7 +183,7 @@ const {
 Boom! with TypeScript, you gain additional superpowers, as you have access to all the properties present inside the data object now!
 
 <div align="center">
-   <img src="./public/SS2.png" /<br>
+   <img src="https://dev-hub-nextjs-app.vercel.app/_next/image?url=http%3A%2F%2Fres.cloudinary.com%2Fdvzjzf36i%2Fimage%2Fupload%2Fv1710102152%2Fqqnnmlacrogzvpd1rird.png&w=1920&q=75" /<br>
 </div>
 <br/>
 
@@ -194,4 +194,3 @@ Boom! with TypeScript, you gain additional superpowers, as you have access to al
 [![github](https://img.shields.io/badge/github-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SoloProgrammer/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pratham-shinde-698a4b240/)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/dev_pratham_0g)
-
