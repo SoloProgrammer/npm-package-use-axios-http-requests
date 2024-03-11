@@ -40,12 +40,14 @@ With useAxios\* hooks offered by use-axios-http-request, you no longer need to c
 
 2. **return-values**
 
-| parameter | hook                      | description                                                                                  |
-| --------- | ------------------------- | -------------------------------------------------------------------------------------------- |
-| `data`    | `useAxios` + `useAxiosFn` | data from an API when request is successfull                                                 |
-| `loading` | `useAxios` + `useAxiosFn` | loading state                                                                                |
-| `error`   | `useAxios` + `useAxiosFn` | error response/object of type `ErrorType` defined below when request failes or error occured |
-| `execute` | `useAxiosFn`              | A custom function which gaves control over when the API call will be trigger                 |
+| parameter    | hook                      | description                                                                                  |
+| ------------ | ------------------------- | -------------------------------------------------------------------------------------------- |
+| `data`       | `useAxios` + `useAxiosFn` | data from an API when request is successfull                                                 |
+| `loading`    | `useAxios` + `useAxiosFn` | loading state                                                                                |
+| `error`      | `useAxios` + `useAxiosFn` | error response/object of type `ErrorType` defined below when request failes or error occured |
+| `execute`    | `useAxiosFn`              | A custom function which gaves control over when the API call will be trigger                 |
+| `refetching` | `useAxiosFn`              | Function which sets the loading to true and data object to null                              |
+| `reset`      | `useAxiosFn`              | Resets all the states to their default values Error: `null`, data: `null`, loading: `false`  |
 
 ## Types
 
@@ -166,12 +168,12 @@ Just your `App.jsx` file to `App.tsx` make sure you have all the typescript conf
 
 ## Exmaple with Typescript (minute changes)
 
-```js
+```ts
 type ProductsResponse = {
-  products: any[],
-  total: number,
-  limit: number,
-  skip: number,
+  products: any[];
+  total: number;
+  limit: number;
+  skip: number;
 };
 const {
   data: productsData,
@@ -187,7 +189,7 @@ Boom! with TypeScript, you gain additional superpowers, as you have access to al
 </div>
 <br/>
 
-## Happy hacking 
+## Happy hacking
 
 ## 🚀 Follow author
 

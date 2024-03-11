@@ -7,7 +7,7 @@ const useAxios = <ApiResponse = AxiosApiResponse>(
   dependencies: any[] = [],
   options: OptionsType = { method: "GET" }
 ) => {
-  const { execute, refetch, reset, ...state } = useAxiosInternal<ApiResponse>(
+  const { execute, refetching, reset, ...state } = useAxiosInternal<ApiResponse>(
     url,
     options,
     dependencies,
@@ -56,7 +56,7 @@ const useAxiosInternal = <ApiResponse>(
       setLoading(false);
     }
   }, dependencies);
-  const refetch = () => {
+  const refetching = () => {
     setLoading(true);
     setData(null);
   };
@@ -66,7 +66,7 @@ const useAxiosInternal = <ApiResponse>(
     setLoading(false);
   };
 
-  return { data, loading, refetch, error, execute, reset };
+  return { data, loading, refetching, error, execute, reset };
 };
 
 export { useAxios, useAxiosFn };
